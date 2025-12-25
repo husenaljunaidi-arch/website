@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+/* Navbar Styles */
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #1a365d;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo a {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+
+nav .logo span {
+    color: #fbbf24;
+}
+
+nav .school-name {
+    font-size: 32px;
+    color: #cbd5e0;
+    line-height: 1;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #2d50a7;
+    color: #fbbf24;
+}
+
+.tbl-one {
+    background: #fbbf24;
+    color: #1a365d !important;
+    font-weight: 600 !important;
+    padding: 10px 20px !important;
+}
+
+.tbl-one:hover {
+    background: #f59e0b;
+    transform: translateY(-2px);
+}
+
+/* Section Styles */
+section {
+    margin: 70px 0;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2d50a7;
+    margin-bottom: 10px;
+}
+
+.kolom h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #1a365d;
+}
+
+.kolom p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a5568;
+    margin-bottom: 15px;
+}
+
+.tbl-two {
+    background: #2d50a7;
+    color: white;
+    padding: 12px 28px;
+    font-weight: 600;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    border: 2px solid #2d50a7;
+}
+
+.tbl-two:hover {
+    background: transparent;
+    color: #2d50a7;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+#home .gambar {
+    width: 45%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+#home .kolom {
+    width: 50%;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7fafc;
+    padding: 60px 0;
+    border-radius: 12px;
+}
+
+#about .kolom {
+    width: 50%;
+    padding: 0 40px;
+}
+
+#about .gambar1 {
+    width: 45%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Program Section */
+#program {
+    background-color: #f0f9ff;
+    padding: 60px 0;
+    border-radius: 12px;
+}
+
+.tengah {
+    text-align: center;
+    width: 100%;
+}
+
+.program-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.kartu-program {
+    width: 22%;
+    margin: 15px;
+    padding: 25px 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.kartu-program:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.kartu-program i {
+    font-size: 48px;
+    color: #2d50a7;
+    margin-bottom: 20px;
+}
+
+.kartu-program h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #1a365d;
+}
+
+/* Mentor Section */
+#mentor {
+    padding: 60px 0;
+}
+
+.mentor-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.kartu-mentor {
+    width: 22%;
+    margin: 15px;
+    text-align: center;
+    background: white;
+    border-radius: 12px;
+    padding: 25px 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.kartu-mentor:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.kartu-mentor img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #f0f9ff;
+}
+
+.kartu-mentor p {
+    font-weight: 600;
+    font-size: 18px;
+    color: #1a365d;
+    margin-bottom: 5px;
+}
+
+.kartu-mentor .role {
+    font-weight: normal;
+    font-size: 14px;
+    color: #718096;
+    font-style: italic;
+}
+
+/* Partners Section */
+#partners {
+    padding: 40px 0;
+}
+
+.partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.kartu-partner {
+    width: 20%;
+    margin: 15px;
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.kartu-partner:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.kartu-partner img {
+    width: 120px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.kartu-partner p {
+    font-weight: 600;
+    color: #2d50a7;
+    font-size: 14px;
+}
+
+/* Footer */
+.contact {
+    background: #1a365d;
+    padding: 60px 0;
+    color: white;
+    margin-top: 60px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.footer-section h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fbbf24;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #cbd5e0;
+    margin-bottom: 10px;
+}
+
+.footer-section i {
+    color: #fbbf24;
+    margin-right: 10px;
+    width: 20px;
+}
+
+/* Copyright */
+#copyright {
+    background: #0f1f3d;
+    padding: 20px 0;
+    text-align: center;
+    color: #a0aec0;
+    font-size: 14px;
+}
+
+#copyright b {
+    color: #fbbf24;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    #home, #about {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #home .gambar, #home .kolom,
+    #about .gambar1, #about .kolom {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    
+    .kartu-program, .kartu-mentor, .kartu-partner, .footer-section {
+        width: 45%;
+    }
+    
+    nav ul li {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav .menu ul {
+        display: none;
+    }
+    
+    .kartu-program, .kartu-mentor, .kartu-partner, .footer-section {
+        width: 90%;
+        margin: 15px auto;
+    }
+    
+    .kolom h2 {
+        font-size: 32px;
+    }
+    
+    nav .logo a {
+        font-size: 24px;
+    }
+}
