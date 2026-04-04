@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>navbar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg" style="height: 50px">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+      </button>
+          <div
+            class="font-poppins fst-italic"
+            style="margin-right: 1000px; margin-top: 7px">
+            <h4>MyWarung</h4>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item me-2">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link"  href="produk.html">Produk</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="promo.html">Promo</a>
+            </li>
+            <li class="nav-item me-2">
+              <a
+                class="btn btn-success rounded-pill"
+                href="keranjang.html"
+                tabindex="-1"
+                aria-disabled="true"
+                ><i class="bi bi-cart"></i>Keranjang</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!--navbar tutup-->
+
+<!--pembatas 1-->
+<div class="container mt-5">
+  <h3 class="text-center mb-4">Keranjang Belanja</h3>
+
+  <div class="card shadow-sm">
+    <table class="table align-middle">
+      <thead>
+        <tr>
+          <th>MENU</th>
+          <th>PESANAN</th>
+          <th>HARGA</th>
+          <th>JUMLAH</th>
+          <th>TOTAL</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>
+            <img src="mie ayam amba.avif" class="img-product">
+          </td>
+          <td>Mie Ayam</td>
+          <td>Rp 21.000</td>
+          <td>2</td>
+          <td>Rp 42.000</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Total -->
+    <div class="d-flex justify-content-between mt-3">
+      <strong>TOTAL AKHIR :</strong>
+      <strong>RP 42.000</strong>
+    </div>
+
+    <!-- Button -->
+    <div class="text-end mt-3">
+      <button class="btn btn-checkout">Checkout</button>
+    </div>
+  </div>
+</div>
+<br>
+
+<!--subscribe-->
+<div class="container-fluid py-5 footer1 ">
+  <div class="container">
+    <h5 class="text-center text-light mb-3">Temui Kami</h5>
+  </div>
+
+    <div class="d-flex justify-content-center mb-5" style="gap: 70px">
+      <a href="https://facebook.com/username" target="_blank" class="social-icon">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://instagram.com/username" target="_blank" class="social-icon">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://twitter.com/username" target="_blank" class="social-icon">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="https://youtube.com/username" target="_blank" class="social-icon">
+        <i class="bi bi-youtube"></i>
+      </a>
+    </div>
+    <h5 class="text-center text-light mb-1">Subscribe</h5>
+<p class="text-center text-muted mb-3">untuk informasi tentang promo</p>
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="input-group">
+            <input type="email" class="form-control" placeholder="Ketikkan Email">
+            <button class="btn btn-warning text-light">Subscribe</button>
+        </div>
+    </div>
+</div>
+</div>
+<!--FOOTER-->
+<footer class="container-fluid py-5 footer text-white">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="fw-bold">MyWarung</h5>
+                    <p>Resto ini menyediakan Berbagai macam makanan Favorit orang indonesia
+                    </p>
+                </div>
+
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="fw-bold">Navigation</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="produk.html" class="text-light text-decoration-none">Produk</a></li>
+                        <li><a href="promo.html" class="text-light text-decoration-none">Promo</a></li>
+                        <li><a href="keranjang.html" class="text-light text-decoration-none">Keranjang</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Contact</h5>
+                    <p>Email : MyWarung@email.com</p>
+                    <p>Telp : 0812-3456-7890</p>
+                    <p class="mb-0">&copy; 2026 MyWarung. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
